@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      dishes:
+        title: Dishes
+    dishes:
+      admin:
+        dishes:
+          actions:
+            create_new: 建立新的 Dish
+            reorder: 对 Dishes 重新排序
+            reorder_done: 对 Dishes 的重新排序结束
+          records:
+            title: Dishes
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Dishes yet. Click "Add New Dish" to add your first dish.
+            no_items_yet: 目前没有 Dishes . 点击 "Add New Dish" 创建一个dish.
+          dish:
+            view_live_html: 查看 dish 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 dish
+            delete: 永久删除 dish
+      dishes:
+        show:
+          other: 其他 Dishes
+  activerecord:
+    attributes:
+      'refinery/dishes/dish':
+        name: Name
+        price: Price
+        promotion: Promotion
+        photo: Photo
+        description: Description

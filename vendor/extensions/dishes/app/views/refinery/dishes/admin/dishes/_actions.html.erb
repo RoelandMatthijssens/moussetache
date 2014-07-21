@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Dishes::Admin::DishesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.dishes_admin_dishes_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_dishes_admin_dish_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Dishes::Admin::DishesController.sortable? && ::Refinery::Dishes::Dish.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Dishes"),
+                 refinery.dishes_admin_dishes_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Dishes"),
+                 refinery.dishes_admin_dishes_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

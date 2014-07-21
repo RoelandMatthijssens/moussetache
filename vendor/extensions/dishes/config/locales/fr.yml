@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      dishes:
+        title: Dishes
+    dishes:
+      admin:
+        dishes:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Dish
+            reorder: Réordonner les Dishes
+            reorder_done: Fin de réordonnancement des Dishes
+          records:
+            title: Dishes
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Dish. Cliquer sur "Créer un(e) nouve(au/l/lle) Dish" pour créer votre premi(er/ère) dish.'
+          dish:
+            view_live_html: Voir ce(t/tte) dish <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) dish
+            delete: Supprimer définitivement ce(t/tte) dish
+      dishes:
+        show:
+          other: Autres Dishes
+  activerecord:
+    attributes:
+      'refinery/dishes/dish':
+        name: Name
+        price: Price
+        promotion: Promotion
+        photo: Photo
+        description: Description

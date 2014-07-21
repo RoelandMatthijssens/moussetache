@@ -1,0 +1,2 @@
+<%= will_paginate @dishes if Refinery::Dishes::Admin::DishesController.pageable? %>
+<%= render 'sortable_list' %>

@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      dishes:
+        title: Dishes
+    dishes:
+      admin:
+        dishes:
+          actions:
+            create_new: Lag en ny Dish
+            reorder: Endre rekkefølgen på Dishes
+            reorder_done: Ferdig å endre rekkefølgen Dishes
+          records:
+            title: Dishes
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Dishes enda. Klikk på "Lag en ny Dish" for å legge til din første dish.
+          dish:
+            view_live_html: Vis hvordan denne dish ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne dish
+            delete: Fjern denne dish permanent
+      dishes:
+        show:
+          other: Andre Dishes
+  activerecord:
+    attributes:
+      'refinery/dishes/dish':
+        name: Name
+        price: Price
+        promotion: Promotion
+        photo: Photo
+        description: Description
