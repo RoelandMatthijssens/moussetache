@@ -1,0 +1,25 @@
+.header{
+	background-color:yellow;
+	height:170px;;
+	white-space:nowrap;
+	nav{
+		height:100%;
+	}
+	div{
+		width:30%;
+		height: 100%;
+		display: inline-block;
+		text-align:center;
+	}
+
+	a{
+		text-decoration:none;
+		color:white;
+		font-size:3em;
+		width: 30%;
+		&:hover{
+			text-decoration:none;
+			color:LightGray;
+		}
+	}
+}
