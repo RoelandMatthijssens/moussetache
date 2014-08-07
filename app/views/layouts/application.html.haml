@@ -6,8 +6,9 @@
 		=csrf_meta_tags
 
 	%body
+		=render "layouts/header"
+		=render "layouts/top_banner"
 		.container
-			=render "layouts/header"
 			.row
 				=render "layouts/left_panel"
 				=render "layouts/mid_panel"

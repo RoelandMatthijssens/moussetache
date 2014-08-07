@@ -3,35 +3,31 @@ $tablet:992px;
 $desktop:1200px;
 
 .left_panel{
+	width: 27.5%;
 	background-color: rgba(255,255,255,0.5);
 }
 .mid_panel{
+	width: 37%;
 	background-color:blue;
+	margin-left:4%;
+	margin-right:4%;
 }
 .right_panel{
+	width: 27.5%;
 	background-color: rgba(255,255,255,0.5);
-}
-
-.moussetache{
-	color:white;
-	background:image-url("moussetache.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .container{
 	@media screen and (min-width: $desktop){
-		width:90%;
+		width:73%;
 	}
 	@media screen and (min-width: $tablet){
-		width:90%;
+		width:73%;
 	}
 	@media screen and (min-width: $desktop){
-		width:90%;
+		width:73%;
 	}
 }
-
 body{
 	background:image-url("background.jpg");
 	background-size: cover;
