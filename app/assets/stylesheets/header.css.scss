@@ -3,7 +3,6 @@
 		width:25%;
 		margin-left:-12.5%;
 		display:inline-block;
-		background-color:orange;
 	}
 	.moussetache{
 		width: 25%;
@@ -17,12 +16,12 @@
 	.moussetache_right{
 		width:25%;
 		display:inline-block;
-		background-color:orange;
 	}
 
 	padding:0;
-	height:170px;
+	height:$header_height;
 	white-space:nowrap;
+	overflow:hidden;
 	nav{
 		height:100%;
 	}
@@ -31,6 +30,7 @@
 		height: 100%;
 		display: inline-block;
 		text-align:center;
+		vertical-align:top;
 		padding-top:50px;
 	}
 
@@ -48,7 +48,7 @@
 
 .top_banner{
 	width: 100%;
-	height:45px;
+	height:$top_banner_height;
 	background-color:red;
 	text-align:center;
 	font-size:2em;

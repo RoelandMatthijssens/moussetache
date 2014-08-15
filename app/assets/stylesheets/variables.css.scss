@@ -1,1 +1,13 @@
 $panel_color:rgba(255,255,255,0.3);
+$mobile:768px;
+$tablet:992px;
+$desktop:1200px;
+$header_height:170px;
+$top_banner_height:45px;
+
+@mixin panel_height($subtract_height){
+	height: -moz-calc(100% - #{$subtract_height});
+	height: -webkit-calc(100% - #{$subtract_height});
+	height: -o-calc(100% - #{$subtract_height});
+	height: calc(100% - #{$subtract_height});
+}

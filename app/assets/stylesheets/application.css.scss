@@ -8,7 +8,13 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require variables
- *= require_tree .
  */
+@import "variables.css.scss";
+@import "bootstrap-theme.scss";
+@import "bootstrap.scss";
+@import "contents.css.scss";
+@import "dishes.css.scss";
+@import "header.css.scss";
+@import "layouts.css.scss";
+@import "static_pages.css.scss";
+@import "testimonies.css.scss";
