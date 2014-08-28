@@ -1,3 +1,6 @@
+.panel{
+	background-color: rgba(255,255,255,0.5);
+}
 h1.moussetache_header{
 	z-index:1;
 	&:after{
@@ -19,11 +22,11 @@ h1.moussetache_header{
 }
 .left_panel{
 	text-align:center;
+	background-image:url("menusnor.png");
 	@include panel_height(#{$header_height+$top_banner_height});
 	width: 27.5%;
-	background-color: rgba(255,255,255,0.5);
 	.moussetache_link{
-		padding-bottom:30px;
+		padding-bottom:45px;
 		a{
 			position:relative;
 			z-index:1;
@@ -43,33 +46,40 @@ h1.moussetache_header{
 	}
 }
 .mid_panel{
+	@include panel_height(#{$header_height+$top_banner_height});
 	width: 37%;
 	margin-left:4%;
 	margin-right:4%;
 	.main_content{
-		background-color: rgba(255,255,255,0.5);
+		height:100%;
+		padding:15px;
 	}
 }
 .right_panel{
 	@include panel_height(#{$header_height+$top_banner_height});
+	background-image:url("contactsnor.png");
 	width: 27.5%;
-	background-color: rgba(255,255,255,0.5);
 }
 
 .container{
-	@media screen and (min-width: $desktop){
-		width:73%;
+	height:100%;
+	@media screen and (max-width: $desktop){
+		width:calc(#{$desktop}*0.75);
 	}
-	@media screen and (min-width: $tablet){
-		width:73%;
+	@media screen and (max-width: $tablet){
+		width:calc(#{$tablet}*0.75);
 	}
-	@media screen and (min-width: $desktop){
-		width:73%;
+	@media screen and (max-width: $mobile){
+		width:calc(#{$mobile}*0.75);
 	}
 }
 body{
 	background:image-url("background.jpg");
 	background-size: cover;
+	height:100%;
+}
+html{
+	height:100%;
 }
 .row{
 	z-index:0;

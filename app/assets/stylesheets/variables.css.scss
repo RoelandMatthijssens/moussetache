@@ -2,8 +2,9 @@ $panel_color:rgba(255,255,255,0.3);
 $mobile:768px;
 $tablet:992px;
 $desktop:1200px;
-$header_height:170px;
-$top_banner_height:45px;
+$header_resize_width:1400px;
+$header_height:140px;
+$top_banner_height:0;
 
 @mixin panel_height($subtract_height){
 	height: -moz-calc(100% - #{$subtract_height});

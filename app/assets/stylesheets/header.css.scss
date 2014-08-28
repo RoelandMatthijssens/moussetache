@@ -1,21 +1,27 @@
 .header{
 	.moussetache_left{
-		width:25%;
 		margin-left:-12.5%;
-		display:inline-block;
+	}
+	.logo{
+		background-image:url("logo.png");
+		width: 25%;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
 	}
 	.moussetache{
 		width: 25%;
-		color:white;
-		background:image-url("moussetache.png");
 		background-size: 100% 70%;
 		background-repeat: no-repeat;
 		background-position: center;
 		display:inline-block;
 	}
+	.brown_moussetache{
+		background-image:url("brownMoussetache.png");
+	}
 	.moussetache_right{
 		width:25%;
-		display:inline-block;
 	}
 
 	padding:0;
@@ -36,13 +42,16 @@
 
 	a{
 		text-decoration:none;
-		color:white;
+		color: black;
 		font-size:3em;
 		width: 30%;
 		&:hover{
 			text-decoration:none;
 			color:LightGray;
 		}
+	}
+	@media screen and (min-width:$header_resize_width){
+		height:calc(#{$header_height}*1.3);
 	}
 }
 
