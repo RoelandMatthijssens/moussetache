@@ -3,7 +3,7 @@
 		margin-left:-12.5%;
 	}
 	.logo{
-		background-image:url("logo.png");
+		background-image:asset-url("logo.png");
 		width: 25%;
 		background-position: center;
 		background-size: contain;
@@ -18,7 +18,7 @@
 		display:inline-block;
 	}
 	.brown_moussetache{
-		background-image:url("brownMoussetache.png");
+		background-image:asset-url("brownMoussetache.png");
 	}
 	.moussetache_right{
 		width:25%;

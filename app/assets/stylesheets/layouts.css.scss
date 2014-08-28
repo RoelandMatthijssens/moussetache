@@ -6,7 +6,7 @@ h1.moussetache_header{
 	&:after{
 		z-index:0;
 		content:"";
-		background-image:url("transparantMoussetache.png");
+		background-image:asset-url("transparantMoussetache.png");
 		opacity: 0.50;
 		position:absolute;
 		left:-10%;
@@ -22,7 +22,7 @@ h1.moussetache_header{
 }
 .left_panel{
 	text-align:center;
-	background-image:url("menusnor.png");
+	background-image:asset-url("menusnor.png");
 	@include panel_height(#{$header_height+$top_banner_height});
 	width: 27.5%;
 	.moussetache_link{
@@ -38,7 +38,7 @@ h1.moussetache_header{
 			left:20%;
 			height:3em;
 			margin-top:-0.5em;
-			background-image:url("moussetache.png");
+			background-image:asset-url("moussetache.png");
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -57,7 +57,7 @@ h1.moussetache_header{
 }
 .right_panel{
 	@include panel_height(#{$header_height+$top_banner_height});
-	background-image:url("contactsnor.png");
+	background-image:asset-url("contactsnor.png");
 	width: 27.5%;
 }
 
@@ -74,7 +74,7 @@ h1.moussetache_header{
 	}
 }
 body{
-	background:image-url("background.jpg");
+	background:image-asset-url("background.jpg");
 	background-size: cover;
 	height:100%;
 }
