@@ -2,6 +2,13 @@
 	.moussetache_left{
 		margin-left:-12.5%;
 	}
+	.moussetache{
+		width: 25%;
+		background-size: 100% 70%;
+		background-repeat: no-repeat;
+		background-position: center;
+		display:inline-block;
+	}
 	.logo{
 		background-image:asset-url("logo.png");
 		width: 25%;
@@ -10,12 +17,15 @@
 		background-repeat: no-repeat;
 		cursor: pointer;
 	}
-	.moussetache{
-		width: 25%;
-		background-size: 100% 70%;
-		background-repeat: no-repeat;
-		background-position: center;
-		display:inline-block;
+	.menu_header_link{
+		background-image:asset-url("menusnor.png");
+		background-size: 100% 100%;
+		cursor: pointer;
+	}
+	.contact_header_link{
+		background-image:asset-url("contactsnor.png");
+		background-size: 100% 100%;
+		cursor: pointer;
 	}
 	.brown_moussetache{
 		background-image:asset-url("brownMoussetache.png");
