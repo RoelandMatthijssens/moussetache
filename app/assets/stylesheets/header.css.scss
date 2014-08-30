@@ -2,23 +2,32 @@
 	.moussetache_left{
 		margin-left:-12.5%;
 	}
+	.moussetache{
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		display:inline-block;
+	}
 	.logo{
 		background-image:asset-url("logo.png");
-		width: 25%;
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
 		cursor: pointer;
 	}
-	.moussetache{
-		width: 25%;
-		background-size: 100% 70%;
-		background-repeat: no-repeat;
-		background-position: center;
-		display:inline-block;
+	.menu_header{
+		background-image:asset-url("menusnor.png");
+		background-size: 100% 100%;
+	}
+	.contact_header{
+		background-image:asset-url("contactsnor.png");
+		background-size: 100% 100%;
 	}
 	.brown_moussetache{
 		background-image:asset-url("brownMoussetache.png");
+		background-size: 100% 70%;
+		background-repeat:no-repeat;
+		background-position:center;
 	}
 	.moussetache_right{
 		width:25%;
@@ -29,10 +38,11 @@
 	white-space:nowrap;
 	overflow:hidden;
 	nav{
+		margin-left:auto;
+		margin-right:auto;
 		height:100%;
 	}
 	div{
-		width:34%;
 		height: 100%;
 		display: inline-block;
 		text-align:center;
@@ -49,9 +59,6 @@
 			text-decoration:none;
 			color:LightGray;
 		}
-	}
-	@media screen and (min-width:$header_resize_width){
-		height:calc(#{$header_height}*1.3);
 	}
 }
 
