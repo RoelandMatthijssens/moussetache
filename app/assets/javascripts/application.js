@@ -61,5 +61,8 @@ function initSliders(){
 		minSlides: 1,
 		maxSlides: 1,
 		startSlide: index,
+		onSliderLoad: function(){
+				$(".testimony_slider").css("visibility", "visible");
+			}
 	});
 }
