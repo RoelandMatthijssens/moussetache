@@ -17,5 +17,6 @@
 /log/*.lock
 /tmp
 
-# Ignore compiled assets
+# Ignore compiled assets and uploaded images
 /public/assets
+/public/uploads
