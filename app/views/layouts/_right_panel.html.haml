@@ -1,16 +1,12 @@
 .right_panel.col-xs-2.panel
 	.contact_info
 		:markdown
-			wil je graag gebruik maken van de diensten van Catering Le Moussetache?
+			## Contacteer ons
+			Contacteer ons voor info &amp; bestellingen via 0484 18 42 72 of lemoussetache@hotmail.com
 
-			Contacteer ons vrijblijvens voor meer informatie op 011/123456
-
-			offerte te verkrijgen via lemoussetache@gmail.com
-
-			gratis levering aan huis binnen een straal van <a href="map">25km</a>
+			Bezoek ons ook op facebook!
 
 	.testimonies
+		%input#start_index{value:@start_index}
 		%h1.moussetache_header.moussetache_club
-		van bekende snorrendragers
-		.testimony
-			%p "het stoofvlees van mijn vrouw is niet te vreten, voortaan wil ik alleen nog maar moussetache stoofvlees eten!"
+		=render partial: "testimonies/slider"

@@ -8,7 +8,7 @@
 	= @testimony.content
 %p
 	%b Image:
-	= image_tag @testimony.image_url
+	= image_tag @testimony.image_url(:thumb)
 
 = link_to 'Edit', edit_testimony_path(@testimony)
 \|

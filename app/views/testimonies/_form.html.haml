@@ -11,7 +11,7 @@
 		= f.text_field :author
 	.field
 		= f.label :content
-		= f.text_field :content
+		= f.text_area :content, rows: 10, cols:50
 	=image_tag @testimony.image_url(:thumb)
 	.field
 		= f.label :image

@@ -4,9 +4,6 @@
 .menu{
 	padding-top:10px;
 }
-.contact_info{
-	padding-top:10px;
-}
 .al_ons_lekkers:after{
 	background-image:asset-url("alonslekkerssnor.png");
 }
@@ -18,6 +15,7 @@
 }
 h1.moussetache_header{
 	z-index:1;
+	margin-bottom:40px;
 	&:after{
 		z-index:0;
 		content:"";
@@ -36,12 +34,15 @@ h1.moussetache_header{
 }
 .left_panel{
 	text-align:center;
+	.specialties{
+		height:200px;
+	}
 	ul.left_ul{
 		list-style-type:none;
 		padding:0;
 	}
 	.moussetache_link{
-		padding-bottom:4em;
+		padding-bottom:6em;
 		cursor:pointer;
 		a{
 			position:relative;
@@ -77,8 +78,15 @@ h1.moussetache_header{
 }
 .mid_panel{
 	.main_content{
+		text-align:justify;
 		height:100%;
 		padding:15px;
+	}
+}
+.right_panel{
+	.contact_info{
+		height:200px;
+		//padding-top:70px;
 	}
 }
 body{
