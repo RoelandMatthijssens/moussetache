@@ -69,6 +69,6 @@ class TestimoniesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def testimony_params
-      params.require(:testimony).permit(:content, :name)
+      params.require(:testimony).permit(:author, :content, :image)
     end
 end

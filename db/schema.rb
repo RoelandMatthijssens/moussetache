@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140722175916) do
+ActiveRecord::Schema.define(version: 20140831103807) do
 
   create_table "contents", force: true do |t|
     t.string   "key"
@@ -31,8 +31,9 @@ ActiveRecord::Schema.define(version: 20140722175916) do
   end
 
   create_table "testimonies", force: true do |t|
+    t.string   "author"
     t.string   "content"
-    t.string   "name"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

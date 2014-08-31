@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+	%b Author:
+	= @testimony.author
+%p
+	%b Content:
+	= @testimony.content
+%p
+	%b Image:
+	= image_tag @testimony.image_url
+
+= link_to 'Edit', edit_testimony_path(@testimony)
+\|
+= link_to 'Back', testimonies_path

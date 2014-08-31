@@ -18,7 +18,7 @@ class TestimoniesControllerTest < ActionController::TestCase
 
   test "should create testimony" do
     assert_difference('Testimony.count') do
-      post :create, testimony: { content: @testimony.content, name: @testimony.name }
+      post :create, testimony: { author: @testimony.author, content: @testimony.content, image: @testimony.image }
     end
 
     assert_redirected_to testimony_path(assigns(:testimony))
@@ -35,7 +35,7 @@ class TestimoniesControllerTest < ActionController::TestCase
   end
 
   test "should update testimony" do
-    patch :update, id: @testimony, testimony: { content: @testimony.content, name: @testimony.name }
+    patch :update, id: @testimony, testimony: { author: @testimony.author, content: @testimony.content, image: @testimony.image }
     assert_redirected_to testimony_path(assigns(:testimony))
   end
 
