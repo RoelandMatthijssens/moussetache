@@ -12,7 +12,7 @@
 	.field
 		= f.label :content
 		= f.text_field :content
-	=image_tag @testimony.image_url
+	=image_tag @testimony.image_url(:thumb)
 	.field
 		= f.label :image
 		= f.file_field :image
