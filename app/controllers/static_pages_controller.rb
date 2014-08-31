@@ -1,16 +1,21 @@
 class StaticPagesController < ApplicationController
-  def home
-  end
+	def home
+	end
 
-  def pasta
-  end
+	def soep
+	end
 
-  def warm
-  end
+	def groteHonger
+	end
 
-  def dessert
-  end
+	def zoetigheden
+	end
 
-  def cakes
-  end
+	def suggesties
+	end
+
+	def map
+		render "map", :layout => false
+	end
+
 end

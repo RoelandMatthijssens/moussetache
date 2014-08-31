@@ -1,7 +1,3 @@
-$(document).ready(function(){
-	resetPanelHeight();
-});
-
 function resetPanelHeight(){
 	var headerHeight = $(".header").height();
 	var bannerHeight = $(".top_banner").height();

@@ -1,10 +1,13 @@
 Moussetache::Application.routes.draw do
 
 	get "/" => "static_pages#home"
-	get "pasta" => "static_pages#pasta"
-	get "warm" => "static_pages#warm"
-	get "dessert" => "static_pages#dessert"
-	get "cakes" => "static_pages#cakes"
+	get "home" => "static_pages#home"
+	get "soep" => "static_pages#soep"
+	get "groteHonger" => "static_pages#groteHonger"
+	get "zoetigheden" => "static_pages#zoetigheden"
+	get "suggesties" => "static_pages#suggesties"
+	get "ontbijtmanden" => "static_pages#ontbijtmanden"
+	get "map" => "static_pages#map"
 
 	resources :contents
 

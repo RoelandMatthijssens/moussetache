@@ -15,3 +15,32 @@
 //= require turbolinks
 //= require panes
 //= require_tree .
+
+$(document).ready(function(){
+	resetPanelHeight();
+	initLinks();
+});
+
+
+function initLinks(){
+	$(".link").each(function(index, i){
+		simulateLink(i);
+	});
+}
+
+function simulateLink(selector){
+	var link = $(selector);
+	var target = link.data("target");
+	link.mousedown(function(event){
+		switch(event.which){
+			case 1:
+				window.location=target;
+				break;
+			case 2:
+				window.open(target,'_newtab');
+				break;
+			case 3:
+				break;
+		};
+	});
+}
