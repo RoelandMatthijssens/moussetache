@@ -12,12 +12,17 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bxslider
 //= require panes
 //= require_tree .
 
 $(document).ready(function(){
 	resetPanelHeight();
 	initLinks();
+});
+
+$(window).load(function(){
+	initSliders();
 });
 
 
@@ -41,5 +46,20 @@ function simulateLink(selector){
 			case 3:
 				break;
 		};
+	});
+}
+
+function initSliders(){
+	var index = $("#start_index").val();
+	$(".testimony_slider").bxSlider({
+		auto: true,
+		pager: false,
+		controls: false,
+		pause: 10000,
+		speed: 1000,
+		autoHover: true,
+		minSlides: 1,
+		maxSlides: 1,
+		startSlide: index,
 	});
 }

@@ -1,0 +1,25 @@
+.testimonies
+	#start_index{
+		display:none;
+	}
+	img{
+		padding:5px;
+	}
+//.testimony_content{
+//	width:60%;
+//	display:inline-block;
+//}
+//.testimony_image{
+//	vertical-align:top;
+//	width:35%;
+//	display:inline-block;
+//	img{
+//		max-width:100%;
+//		max-height:100%;
+//	}
+//}
+.testimony_author{
+	display:block;
+	font-weight: bold;
+	float:right;
+}

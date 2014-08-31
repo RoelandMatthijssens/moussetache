@@ -1,0 +1,9 @@
+.testimony_slider
+	-@testimonies.each do |testimony|
+		.slide
+			=image_tag testimony.image_url(:thumb), {align: "left"}
+			=testimony.content
+			%br
+			.testimony_author
+				\-
+				=testimony.author
