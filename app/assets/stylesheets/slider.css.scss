@@ -1,6 +1,8 @@
 .testimonies{
 	.testimony_slider{
 		visibility:hidden;
+		max-height:300px;
+		overflow:hidden;
 	}
 	#start_index{
 		display:none;
