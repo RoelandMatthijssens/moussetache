@@ -1,10 +1,13 @@
 .right_panel.col-xs-2.panel
 	.contact_info
+		%h2.tekton Contacteer ons
 		:markdown
-			## Contacteer ons
 			Contacteer ons voor info &amp; bestellingen via **0484 18 42 72** of lemoussetache@hotmail.com
 
-			Bezoek ons ook op facebook!
+		%p
+			Bezoek ons ook op
+			%a{href: "http://www.facebook.com/cateringlemoussetache"}
+				facebook!
 
 	.testimonies
 		%input#start_index{value:@start_index}

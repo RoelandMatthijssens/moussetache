@@ -17,8 +17,10 @@
 //= require_tree .
 
 $(document).ready(function(){
-	resetPanelHeight();
 	initLinks();
+});
+$(window).load(function(){
+	resetPanelHeight();
 });
 
 $(window).load(function(){
