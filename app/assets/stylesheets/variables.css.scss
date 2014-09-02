@@ -9,3 +9,7 @@ $gutter_width:40px;
 	height: -o-calc(100% - #{$subtract_height});
 	height: calc(100% - #{$subtract_height});
 }
+@font-face {
+	font-family: 'tektonPro';
+	src: url('TektonPro-Regular.otf');
+}
