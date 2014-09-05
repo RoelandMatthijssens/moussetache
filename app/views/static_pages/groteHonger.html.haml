@@ -1,9 +1,9 @@
 
 .main_image
 	=image_tag "degrotehonger.jpg"
-%h2.tekton De Grote Honger
-- groteHongerLines = ["paghetti Bolognaise", "Spaghetti Carbonara", "Farfalle met geitenkaassaus en walnoten", "Mediterraanse penne", "Tagliatelle groene pestoroom met hespblokjes", "Penne tomaat kruidenroom met hesp en erwtjes", "Cavatappi kruidenroom met spekjes", "Lasagna Bolognaise", "Tagliatelle scampi diablo", "Quiche Lorraine – klein (1p)", "Quiche Lorraine – middel (2p)", "Quiche Lorraine – groot (4p)", "Quiche met zalm, prei en kruidenkaas – klein (1p)", "Quiche met zalm, prei en kruidenkaas – middel (2p)", "Quiche met zalm, prei en kruidenkaas – groot (4p)", "Quiche mediterrane groentjes – klein (1p)", "Quiche mediterrane groentjes – middel (2p)", "Quiche mediterrane groentjes – groot (4p)", "Smeuïge rijst met witte vis en prei"]
-- groteHongerPrices = ["€5.00", "€5.50", "€6.00", "€6.00", "€6.00", "€6.50", "€7.00", "€8.00", "€9.00", "€3.00", "€5.50", "€10.00", "€5.00", "€9.50", "€18.00", "€3.50", "€6.00", "€11.00", "€6.0"]
+%h2 De Grote Honger
+- groteHongerLines = ["Spaghetti Bolognaise", "Spaghetti Carbonara", "Farfalle met geitenkaassaus en walnoten", "Mediterraanse penne", "Tagliatelle groene pestoroom met hespblokjes", "Penne tomaat kruidenroom met hesp en erwtjes", "Cavatappi kruidenroom met spekjes", "Lasagna Bolognaise", "Tagliatelle scampi diablo", "Quiche Lorraine – klein (1p)", "Quiche Lorraine – middel (2p)", "Quiche Lorraine – groot (4p)", "Quiche met zalm, prei en kruidenkaas – klein (1p)", "Quiche met zalm, prei en kruidenkaas – middel (2p)", "Quiche met zalm, prei en kruidenkaas – groot (4p)", "Quiche mediterrane groentjes – klein (1p)", "Quiche mediterrane groentjes – middel (2p)", "Quiche mediterrane groentjes – groot (4p)", "Smeuïge rijst met witte vis en prei"]
+- groteHongerPrices = ["€5.00", "€5.50", "€6.00", "€6.00", "€6.00", "€6.50", "€7.00", "€8.00", "€9.00", "€3.00", "€5.50", "€10.00", "€5.00", "€9.50", "€18.00", "€3.50", "€6.00", "€11.00", "€6.00"]
 %table.menu_table
 	- groteHongerLines.length.times do |i|
 		%tr
@@ -23,7 +23,7 @@
 			%td.price
 				#{soepenPrices[i]}
 
-%h2.tekton 
+%h2.tekton Salades
 - saladesLines = ["Ceasar Le Moussetache", "Grieks", "Gerookte zalm", "Geitenkaas met appel en spekjes"]
 - saladesPrices = ["€10.00", "€10.00", "€11.00", "€12.00"]
 %table.menu_table
@@ -45,5 +45,6 @@
 			%td.price
 				#{anderePrices[i]}
 
-*We vragen om 24u op voorhand te bestellen voor de gerechten op deze pagina
+%p.notice
+	*We vragen om 24u op voorhand te bestellen voor de gerechten op deze pagina
 

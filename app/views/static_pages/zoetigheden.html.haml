@@ -1,6 +1,6 @@
 .main_image
 	=image_tag "zoetigheden.jpg"
-- lines = ["Mousse van pure chocolade", "Bavarois van bosvruchten", "Citroentaartje", "Panna Cotta van witte chocolade met passievruchtcoulis", "Witte chocolademousse met frambozencoulis & cookie", "Rijstpap met kokosmelk en kokoskrokant", "Trifle met mascarponecreme en blauwe bessen", "Trifle van frambozen, kwark en pistaches", "Tiramisu met speculoos", "Exotische Tiramisu", "Fruitslaatje", "Passievruchtbavarois", "Oreo dessert", "Appeltaartje", "", "Aardbeienkaastaart", "Citroen-limoenkaastaart", "Chocoladekaastaart", "", "Oreo taart", "Trio chocolademoussetachetaart" "Frambozenparfait", "", "Assortiment ambachtelijke pralines 250gr", "Kokosrotsjes"]
+- lines = ["Mousse van pure chocolade", "Bavarois van bosvruchten", "Citroentaartje", "Panna Cotta van witte chocolade met passievruchtcoulis", "Witte chocolademousse met frambozencoulis & cookie", "Rijstpap met kokosmelk en kokoskrokant", "Trifle met mascarponecreme en blauwe bessen", "Trifle van frambozen, kwark en pistaches", "Tiramisu met speculoos", "Exotische Tiramisu", "Fruitslaatje", "Passievruchtbavarois", "Oreo dessert", "Appeltaartje", "", "Aardbeienkaastaart", "Citroen-limoenkaastaart", "Chocoladekaastaart", "", "Oreo taart", "Trio chocolademoussetachetaart", "Frambozenparfait", "", "Assortiment ambachtelijke pralines 250gr", "Kokosrotsjes"]
 - prices = ["€2.00", "€2.50", "€2.50", "€2.50", "€2.50", "€2.50", "€2.50", "€2.50", "€3.00", "€3.00", "€3.00", "€3.50", "€3.50", "€3.00", "", "€5 - €10 - €20", "€5 - €10 - €20", "€5 - €10 - €20", "", "€5 - €10 - €20", "€8 - €15 - €25", "€10.00", "", "€5.00", "€4.00"]
 %table.menu_table
 	- lines.length.times do |i|
@@ -10,5 +10,5 @@
 			%td.price
 				#{prices[i]}
 
-:markdown
+%p.notice
 	*We vragen om 24u op voorhand te bestellen voor de zoetigheden op deze pagina
