@@ -62,7 +62,7 @@ h1.moussetache_header{
 .left_panel{
 	text-align:center;
 	.specialties{
-		height:250px;
+		height:$panel_top_block_height;
 	}
 	ul.left_ul{
 		list-style-type:none;
@@ -135,7 +135,7 @@ h1.moussetache_header{
 }
 .right_panel{
 	.contact_info{
-		height:250px;
+		height:$panel_top_block_height;
 		//padding-top:70px;
 	}
 }
