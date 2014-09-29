@@ -2,8 +2,8 @@
 .main_image
 	=image_tag "degrotehonger.jpg"
 %h2 De Grote Honger
-- groteHongerLines = ["Spaghetti Bolognaise", "Spaghetti Carbonara", "Farfalle met geitenkaassaus en walnoten", "Mediterraanse penne", "Tagliatelle groene pestoroom met hespblokjes", "Penne tomaat kruidenroom met hesp en erwtjes", "Cavatappi kruidenroom met spekjes", "Lasagna Bolognaise", "Tagliatelle scampi diablo", "Quiche Lorraine – klein (1p)", "Quiche Lorraine – middel (2p)", "Quiche Lorraine – groot (4p)", "Quiche met zalm, prei en kruidenkaas – klein (1p)", "Quiche met zalm, prei en kruidenkaas – middel (2p)", "Quiche met zalm, prei en kruidenkaas – groot (4p)", "Quiche mediterrane groentjes – klein (1p)", "Quiche mediterrane groentjes – middel (2p)", "Quiche mediterrane groentjes – groot (4p)", "Smeuïge rijst met witte vis en prei"]
-- groteHongerPrices = ["€5.00", "€5.50", "€6.00", "€6.00", "€6.00", "€6.50", "€7.00", "€8.00", "€9.00", "€3.00", "€5.50", "€10.00", "€5.00", "€9.50", "€18.00", "€3.50", "€6.00", "€11.00", "€6.00"]
+- groteHongerLines = ["Spaghetti Bolognaise", "Spaghetti Carbonara", "Mediterraanse penne", "Tagliatelle groene pestoroom met hespblokjes", "Penne tomaat kruidenroom met hesp en erwtjes", "Cavatappi kruidenroom met spekjes", "Lasagna Bolognaise", "Tagliatelle scampi diablo", "Quiche Lorraine – klein (1p)", "Quiche Lorraine – middel (2p)", "Quiche Lorraine – groot (4p)", "Quiche met zalm, prei en kruidenkaas – klein (1p)", "Quiche met zalm, prei en kruidenkaas – middel (2p)", "Quiche met zalm, prei en kruidenkaas – groot (4p)", "Quiche mediterrane groentjes – klein (1p)", "Quiche mediterrane groentjes – middel (2p)", "Quiche mediterrane groentjes – groot (4p)", "Smeuïge rijst met witte vis en prei", "Balletjes in tomatensaus", "Vol-au-vent", "Stoofvlees van de chef"]
+- groteHongerPrices = ["€5.00/€7.50", "€5.50/€8.25", "€6.00/€9.00", "€6.00/€9.00", "€6.50/€9.25", "€7.00/€10.50", "€8.00/€12.00", "€9.00/€13.50", "€3.00", "€5.50", "€10.00", "€5.00", "€9.50", "€18.00", "€3.50", "€6.00", "€11.00", "€6.00/€9.00", "€7.00/€10.00", "€8.00/€12.00", "€9.00/€13.50"]
 %table.menu_table
 	- groteHongerLines.length.times do |i|
 		%tr
@@ -11,17 +11,6 @@
 				#{groteHongerLines[i]}
 			%td.price
 				#{groteHongerPrices[i]}
-
-%h2 Soepen
-- soepenLines = ["Courgettesoep", "Tomatenroomsoep met balletjes", "Braziliaanse Maïssoep", "Pittige pompoensoep met kokosmelk"]
-- soepenPrices = ["€3.00", "€6.00", "€6.00", "€6.00"]
-%table.menu_table
-	- soepenLines.length.times do |i|
-		%tr
-			%td.content
-				#{soepenLines[i]}
-			%td.price
-				#{soepenPrices[i]}
 
 %h2 Salades
 - saladesLines = ["Ceasar Le Moussetache", "Grieks", "Gerookte zalm", "Geitenkaas met appel en spekjes"]
@@ -35,8 +24,8 @@
 				#{saladesPrices[i]}
 
 %h2 Schotels BBQ/Gourmet
-- andereLines = ["Mosselen in papillot met witbier, koriander en groentjes", "Mangosalsa", "Kokosrijst"]
-- anderePrices = ["€7.00/st", "€5.00", "€3.50"]
+- andereLines = ["Mosselen in papillot met witbier, koriander en groentjes", "Mangosalsa", "Kokosrijst", "Lookbroodjes (per 2)", "Pastasamade met spekjes, rode paprika & speciaal sausje (4 personen)", "Aardappelsla (4 personen)", "Groenteschotel (sla, komkommer, wortel, tomaat, hardgekookt ei) 4 personen", "Huisgemaakte tartaar"]
+- anderePrices = ["€7.00/st", "€5.00", "€3.50", "€5.00", "€7.00", "€6.50", "€6.00", "€3.00"]
 %table.menu_table
 	- andereLines.length.times do |i|
 		%tr
@@ -45,6 +34,10 @@
 			%td.price
 				#{anderePrices[i]}
 
+%p
+	De pasta's  worden steeds met een potje kaas geleverd. Indien u graad brood wenst, kan dit voor €1 per portie bijgeleverd worden. Bij de andere gerechten (behalve quiche en de rijstschotel) wordt standaard brood voorzien in de vermeldde prijs.
+%p
+	Alle pasta's kan u bestellen in gewoon of groot formaat.
 %p.notice
 	*We vragen om 24u op voorhand te bestellen voor de gerechten op deze pagina
 
