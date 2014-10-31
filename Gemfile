@@ -32,7 +32,7 @@ gem 'bxslider-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'therubyracer'
 gem 'carrierwave'
-gem 'rmagick'
+gem 'rmagick', git: '/home/enermis/duscheisse'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
