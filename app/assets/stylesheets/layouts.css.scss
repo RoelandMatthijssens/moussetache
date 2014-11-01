@@ -105,6 +105,13 @@ h1.moussetache_header{
 	}
 }
 .mid_panel{
+	.centered{
+		text-align:center;
+	}
+	ul.centered{
+		list-style-type:none;
+		padding:0;
+	}
 	h4{
 		font-size:2em;
 		text-align:center;
