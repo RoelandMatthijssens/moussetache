@@ -1,28 +1,50 @@
-- lines = [ "Mini quiche Lorraine (per 8)", "Zuiderse wrap (per 15)", "Mini quiche mediterrane groentjes (per 8)", "Brushetta’s met kruidenboter en tomatensalsa (per 10)", "Mini tomaat garnaal (per 10)", "Mini soepje met kaasstengel", "Worstenbroodjes Le Moussetache (per 12)", "Mousse van gerookte forel met groene appel (per 15)", "Hartige mini croissants met spek en kruidenkaas (per 10)", "Mini quiche zalm, prei & kruidenkaas (per 8)", "Mini frittata’s met geroosterde groenten (per 12)", "Brushetta’s groene pesto, tomaat & mozzarella (per 10)", "Gerookte zalm met dillevinaigrette (10 stuks)", "Fris geitenkaashapje met lente-ui en boterwafel (per 6)", "Geitenkaashapje met zongedroogde tomaatjes (per 8)", "Rivierkreeftjes met komkommer & mango", "Pittige krabkoekjes (per 10)", "Tex Mex Nacho’s (2 pers)", "Nacho’s met yogurt-avocadodip", "Nacho’s met olijvendip", "Le Moussetache aperobord (2 personen)"]
-- prices = ["€0.40/st", "€0.50/st", "€0.45/st", "€0.50/st", "€0.65/st", "€0.50/st", "€0.55/st", "€0.60/st", "€0.60/st", "€0.65/st", "€0.70/st", "€0.80/st", "€1.00/st", "€1.00/st", "€1.25/st", "€1.30/st", "€1.35/st", "€8.00", "€5.00", "€8.00", "€10.00"]
+- aperoItems = {"Mini quiche Lorraine (per 6)" => "0.65/st", |
+	"Zuiderse wrap (per 10)" => "€0.65/st", |
+	"Mini quiche mediterrane groentjes (per 6)" => "€0.70/st", |
+	"Brushetta’s met kruidenboter en tomatensalsa (per 10)" => "€0.65/st", |
+	"Mini tomaat garnaal (per 10)" => "€0.65/st", |
+	"Mini soepje met kaasstengel" => "€0.50/st", |
+	"Worstenbroodjes Le Moussetache (per 12)" => "€0.55/st", |
+	"Mousse van gerookte forel met groene appel (per 20)" => "€0.70/st", |
+	"Hartige mini croissants met spek en kruidenkaas (per 14)" => "€0.65/st", |
+	"Mini quiche zalm,prei & kruidenkaas (per 6)" => "€0.90/st", |
+	"Mini frittata’s met geroosterde groenten (per 12)" => "€0.70/st", |
+	"Brushetta’s groene pesto, tomaat & mozzarella (per 10)" => "€0.80/st", |
+	"Gerookte zalm met dillevinaigrette (10 stuks)" => "€1.00/st", |
+	"Fris geitenkaashapje met lente-ui en boterwafel (per 6)" => "€1.00/st", |
+	"Geitenkaashapje met zongedroogde tomaatjes (per 8)" => "€1.25/st", |
+	"Rivierkreeftjes met komkommer & mango" => "€1.30/st", |
+	"Pittige krabkoekjes (per 10)" => "€1.35/st", |
+	"Tex Mex Nacho’s (2 pers)" => "€10.00", |
+	"Nacho’s met yogurt-avocadodip" => "€5.00", |
+	"Nacho’s met olijvendip" => "€8.00", |
+	"Le Moussetache aperobord (2 personen)" => "€10.00" |
+} |
 
 
 .main_image
 	=image_tag "apero.jpg"
 %h2 Apero
 %table.menu_table
-	- lines.length.times do |i|
+	- aperoItems.keys.length.times do |i|
 		%tr
 			%td.content
-				#{lines[i]}
+				#{aperoItems.keys[i]}
 			%td.price
-				#{prices[i]}
+				#{aperoItems[aperoItems.keys[i]]}
 
 %h2 Soepen
-- soepenLines = ["Courgettesoep", "Tomatenroomsoep met balletjes", "Braziliaanse Maïssoep"]
-- soepenPrices = ["€3.00/l", "€6.00/l", "€6.00/l"]
+- soepItems = { "Courgettesoep" => "€3.00/l", |
+	"Tomatenroomsoep met balletjes" => "€6.00/l", |
+	"Braziliaanse Maïssoep" => "€6.00/l" |
+} |
 %table.menu_table
-	- soepenLines.length.times do |i|
+	- soepItems.keys.length.times do |i|
 		%tr
 			%td.content
-				#{soepenLines[i]}
+				#{soepItems.keys[i]}
 			%td.price
-				#{soepenPrices[i]}
+				#{soepItems[soepItems.keys[i]]}
 
 %p.notice
 	*We vragen om 24u op voorhand te bestellen voor de gerechten op deze pagina

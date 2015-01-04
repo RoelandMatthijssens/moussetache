@@ -1,43 +1,78 @@
-
 .main_image
 	=image_tag "degrotehonger.jpg"
 %h2 De Grote Honger
-- groteHongerLines = ["Spaghetti Bolognaise", "Spaghetti Carbonara", "Mediterraanse penne", "Tagliatelle groene pestoroom met hespblokjes", "Penne tomaat kruidenroom met hesp en erwtjes", "Cavatappi kruidenroom met spekjes", "Lasagna Bolognaise", "Tagliatelle scampi diablo", "Quiche Lorraine – klein (1p)", "Quiche Lorraine – middel (2p)", "Quiche Lorraine – groot (4p)", "Quiche met zalm, prei en kruidenkaas – klein (1p)", "Quiche met zalm, prei en kruidenkaas – middel (2p)", "Quiche met zalm, prei en kruidenkaas – groot (4p)", "Quiche mediterrane groentjes – klein (1p)", "Quiche mediterrane groentjes – middel (2p)", "Quiche mediterrane groentjes – groot (4p)", "Smeuïge rijst met witte vis en prei", "Balletjes in tomatensaus", "Vol-au-vent", "Stoofvlees van de chef"]
-- groteHongerPrices = ["€5.00/€7.50", "€5.50/€8.25", "€6.00/€9.00", "€6.00/€9.00", "€6.50/€9.25", "€7.00/€10.50", "€8.00/€12.00", "€9.00/€13.50", "€3.00", "€5.50", "€10.00", "€5.00", "€9.50", "€18.00", "€3.50", "€6.00", "€11.00", "€6.00/€9.00", "€7.00/€10.00", "€8.00/€12.00", "€9.00/€13.50"]
+- groteHongerItems = {"Spaghetti Bolognaise" => "€5.00/€7.50", |
+	"Spaghetti Carbonara" => "€5.50/€8.25", |
+	"Mediterraanse penne" => "€6.00/€9.00", |
+	"Tagliatelle groene pestoroom met hespblokjes" => "€6.00/€9.00", |
+	"Penne tomaat kruidenroom met hesp en erwtjes" => "€6.50/€9.50", |
+	"Penne All'arrabiata" => "€5.00/€8.50", |
+	"Rijst zoetzuur (varkensvlees)" => "€5.00/€7.50", |
+	"Rijst kip curry met annanas" => "€6.50/€9.50", |
+	"Zuiderse rijst met chorizo & scampi" => "€9.00/€13.50", |
+	"Cavatappi kruidenroom met spekjes" => "€7.00/€10.50", |
+	"Lasagna Bolognaise" => "€8.00/€12.00", |
+	"Tagliatelle scampi diablo" => "€9.00/€13.50", |
+	"Quiche Lorraine – klein (1p)" => "€3.00", |
+	"Quiche Lorraine – middel (2p)" => "€5.50", |
+	"Quiche Lorraine – groot (4p)" => "€10.00", |
+	"Quiche met zalm, prei en kruidenkaas – klein (1p)" => "€5.00", |
+	"Quiche met zalm, prei en kruidenkaas – middel (2p)" => "€9.50", |
+	"Quiche met zalm, prei en kruidenkaas – groot (4p)" => "€18.00", |
+	"Quiche mediterrane groentjes – klein (1p)" => "€3.50", |
+	"Quiche mediterrane groentjes – middel (2p)" => "€6.00", |
+	"Quiche mediterrane groentjes – groot (4p)" => "€11.00", |
+	"Risotto met vis en prei" => "€6.00/€9.00", |
+	"Balletjes in tomatensaus" => "€7.00/€10.00", |
+	"Vol-au-vent" => "€8.00/€12.00", |
+	"Stoofvlees van de chef" => "€9.00/€13.50" |
+} |
 %table.menu_table
-	- groteHongerLines.length.times do |i|
+	- groteHongerItems.keys.length.times do |i|
 		%tr
 			%td.content
-				#{groteHongerLines[i]}
+				#{groteHongerItems.keys[i]}
 			%td.price
-				#{groteHongerPrices[i]}
+				#{groteHongerItems[groteHongerItems.keys[i]]}
 
 %p
-	De pasta's  worden steeds met een potje kaas geleverd. Indien u graag brood wenst, kan dit voor €1 per portie bijgeleverd worden. Bij de andere gerechten (behalve quiche en de rijstschotel) wordt standaard brood voorzien in de vermeldde prijs.
+	De pasta's  worden steeds met een potje kaas geleverd. Indien u graag brood wenst, kan dit voor €1 per portie bijgeleverd worden. Bij de andere gerechten (behalve quiche en de rijstschotel) wordt standaard brood voorzien in de vermeldde prijs. Indien u graag puree wenst in de plaats van brood, kan dit voor €2.00 per portie bijgeleverd worden.
 %p
 	Alle pasta's kan u bestellen in gewoon of groot formaat.
 
 %h2 Salades
-- saladesLines = ["Ceasar Le Moussetache", "Grieks", "Gerookte zalm", "Geitenkaas met appel en spekjes"]
-- saladesPrices = ["€10.00", "€10.00", "€11.00", "€12.00"]
+- saladesItems = {"Ceasar Le Moussetache" => "€10.00", |
+	"Grieks" => "€10.00", |
+	"Gerookte zalm" => "€11.00", |
+	"Geitenkaas met appel en spekjes" => "€12.00", |
+	"Penne scampi" => "€12.50", |
+	"Kip curry annanas" => "€10.00" |
+} |
 %table.menu_table
-	- saladesLines.length.times do |i|
+	- saladesItems.keys.length.times do |i|
 		%tr
 			%td.content
-				#{saladesLines[i]}
+				#{saladesItems.keys[i]}
 			%td.price
-				#{saladesPrices[i]}
+				#{saladesItems[saladesItems.keys[i]]}
 
 %h2 Schotels BBQ/Gourmet
-- andereLines = ["Mosselen in papillot met witbier, koriander en groentjes", "Mangosalsa", "Kokosrijst", "Lookbroodjes (per 2)", "Pastasamade met spekjes, rode paprika & speciaal sausje (4 personen)", "Aardappelsla (4 personen)", "Groenteschotel (sla, komkommer, wortel, tomaat, hardgekookt ei) 4 personen", "Huisgemaakte tartaar"]
-- anderePrices = ["€7.00/st", "€5.00", "€3.50", "€5.00", "€7.00", "€6.50", "€6.00", "€3.00"]
+- andereItems = {"Mosselen in papillot met witbier, koriander en groentjes" => "€7.00/st", |
+	"Mangosalsa" => "€5.00", |
+	"Kokosrijst" => "€3.50", |
+	"Lookbroodjes (per 2)" => "€5.00", |
+	"Pastasamade met spekje, rode paprika & speciaal sausje (4 personen)" => "€7.00", |
+	"Aardappelsla (4 personen)" => "€6.50", |
+	"Groenteschotel (sla, komkommer, wortel, tomaat, hardgekookt ei) 4 personen" => "€6.00", |
+	"Huisgemaakte tartaar" => "€3.00" |
+} |
 %table.menu_table
-	- andereLines.length.times do |i|
+	- andereItems.keys.length.times do |i|
 		%tr
 			%td.content
-				#{andereLines[i]}
+				#{andereItems.keys[i]}
 			%td.price
-				#{anderePrices[i]}
+				#{andereItems[andereItems.keys[i]]}
 
 %p.notice
 	*We vragen om 24u op voorhand te bestellen voor de gerechten op deze pagina
