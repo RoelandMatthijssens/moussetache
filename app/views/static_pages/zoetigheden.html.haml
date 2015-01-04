@@ -1,14 +1,39 @@
 .main_image
 	=image_tag "zoetigheden.jpg"
-- lines = ["Mousse van pure chocolade", "Bavarois van bosvruchten", "Citroentaartje", "Panna Cotta van witte chocolade met passievruchtcoulis", "Witte chocolademousse met frambozencoulis & cookie", "Rijstpap met kokosmelk en kokoskrokant", "Trifle met mascarponecreme en blauwe bessen", "Trifle van frambozen, kwark en pistaches", "Tiramisu met speculoos", "Exotische Tiramisu", "Fruitslaatje", "Passievruchtbavarois", "Oreo dessert", "Appeltaartje", "", "Aardbeienkaastaart", "Citroen-limoenkaastaart", "Chocoladekaastaart", "", "Oreo taart", "Trio chocolademoussetachetaart", "Frambozenparfait", "", "Assortiment ambachtelijke pralines 250gr", "Assortiment ambachtelijke pralines 500gr", "Kokosrotsjes"]
-- prices = ["€2.50", "€3.00", "€3.00", "€3.00", "€3.00", "€3.00", "€3.00", "€3.00", "€3.50", "€3.00", "€3.50", "€4.00", "€4.00", "€3.50", "", "€5 - €10 - €20", "€5 - €10 - €20", "€5 - €10 - €20", "", "€8 - €15 - €25", "€8 - €15 - €25", "€10.00", "", "€6.50", "€12.00", "€4.00"]
+- items = {"Mousse van pure chocolade" => "€2.50", |
+	"Bavarois van bosvruchten" => "€3.00", |
+	"Citroentaartje" => "€3.00", |
+	"Panna Cotta van witte chocolade met passievruchtcoulis" => "€3.00", |
+	"Witte chocolademousse met frambozencoulis & cookie" => "€3.00", |
+	"Rijstpap met kokosmelk en kokoskrokant" => "€3.00", |
+	"Trifle met mascarponecreme en blauwe bessen" => "€3.00", |
+	"Trifle van frambozen, kwark en pistaches" => "€3.00", |
+	"Tiramisu met speculoos" => "€3.50", |
+	"Exotische Tiramisu" => "€3.00", |
+	"Fruitslaatje" => "€3.50", |
+	"Passievruchtbavarois" => "€4.00", |
+	"Oreo dessert" => "€4.00", |
+	"Appeltaartje" => "€3.50", |
+	"EMPTY1" => "", |
+	"Aardbeienkaastaart" => "€5 - €10 - €20", |
+	"Citroen-limoenkaastaart" => "€5 - €10 - €20", |
+	"Chocoladekaastaart" => "€5 - €10 - €20", |
+	"EMPTY2" => "", |
+	"Oreo taart" => "€8 - €15 - €20", |
+	"Trio chocolademoussetachetaart" => "€8 - €15 - €25", |
+	"Frambozenparfait" => "€10.00", |
+	"EMPTY3" => "", |
+	"Assortiment ambachtelijke pralines 250gr" => "€6.50", |
+	"Assortiment ambachtelijke pralines 500gr" => "€12.00", |
+	"Kokosrotsjes" => "€4.00" |
+} |
 %table.menu_table
-	- lines.length.times do |i|
+	- items.keys.length.times do |i|
 		%tr
 			%td.content
-				#{lines[i]}
+				#{items.keys[i].start_with?("EMPTY") ? "" : items.keys[i] }
 			%td.price
-				#{prices[i]}
+				#{items[items.keys[i]]}
 
 %p.notice
 	*We vragen om 24u op voorhand te bestellen voor de zoetigheden op deze pagina
