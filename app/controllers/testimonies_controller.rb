@@ -1,6 +1,7 @@
 class TestimoniesController < ApplicationController
 	http_basic_authenticate_with name: "secret", password: "secret"
 	before_action :set_testimony, only: [:show, :edit, :update, :destroy]
+	layout "admin"
 	before_filter do
 		@testimonies = Testimony.all
 	end
