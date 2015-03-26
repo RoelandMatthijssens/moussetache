@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+	%b Name:
+	= @category_page.name
+%p
+	%b Image:
+	= image_tag @category_page.image_url(:thumb)
+
+= link_to 'Edit', edit_category_page_path(@category_page)
+\|
+= link_to 'Back', category_pages_path

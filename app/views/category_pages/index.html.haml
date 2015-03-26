@@ -1,0 +1,22 @@
+%h1 Listing category_pages
+
+%table
+	%tr
+		%th Name
+		%th Image
+		%th
+		%th
+		%th
+
+	- @category_pages.each do |category_page|
+		%tr
+			%td= category_page.name
+			%td
+				=image_tag category_page.image_url(:thumb)
+			%td= link_to 'Show', category_page
+			%td= link_to 'Edit', edit_category_page_path(category_page)
+			%td= link_to 'Destroy', category_page, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Category page', new_category_page_path

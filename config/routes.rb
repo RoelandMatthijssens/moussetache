@@ -1,5 +1,7 @@
 Moussetache::Application.routes.draw do
 
+  resources :category_pages
+
   resources :testimonies
 
 	get "/" => "static_pages#home"
