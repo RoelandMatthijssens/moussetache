@@ -1,5 +1,7 @@
 Moussetache::Application.routes.draw do
 
+  resources :categories
+
   resources :category_pages
 
   resources :testimonies

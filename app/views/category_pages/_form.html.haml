@@ -15,3 +15,5 @@
 		= f.file_field :image
 	.actions
 		= f.submit 'Save'
+
+=render :partial => 'categories/table', :locals => {:categories => @category_page.categories}

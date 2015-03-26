@@ -1,6 +1,6 @@
 class CategoryPagesController < ApplicationController
 	before_action :set_category_page, only: [:show, :edit, :update, :destroy]
-	layout "admin"
+	layout :resolve_layout
 
 	# GET /category_pages
 	# GET /category_pages.json
@@ -71,5 +71,15 @@ class CategoryPagesController < ApplicationController
 		# Never trust parameters from the scary internet, only allow the white list through.
 		def category_page_params
 			params.require(:category_page).permit(:name, :image)
+		end
+
+		def resolve_layout
+			case action_name
+			when "show"
+				"application"
+			else
+				"admin"
+			end
+			
 		end
 end
