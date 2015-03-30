@@ -1,0 +1,7 @@
+%h1 Listing products
+
+= render :partial => "table", :locals => {:products => @products}
+
+%br
+
+= link_to 'New Product', new_product_path

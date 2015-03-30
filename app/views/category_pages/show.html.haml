@@ -4,3 +4,4 @@
 - @category_page.categories.each do |category|
 	%h2
 		=category.name
+	=render :partial => "categories/products", :locals => {:category => category}

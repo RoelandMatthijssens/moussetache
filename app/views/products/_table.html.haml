@@ -1,0 +1,13 @@
+%table
+	%tr
+		%th Name
+		%th Category
+		%th Description
+		%th
+
+	- products.each do |product|
+		%tr
+			%td= link_to product.name, edit_product_path(product)
+			%td= link_to product.category.name, edit_category_path(product.category)
+			%td= product.description
+			%td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }

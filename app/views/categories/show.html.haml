@@ -1,11 +1,13 @@
 %p#notice= notice
 
 %p
-  %b Name:
-  = @category.name
+	%b Name:
+	= @category.name
 %p
-  %b Category page:
-  = @category.category_page.name
+	%b Category page:
+	= @category.category_page.name
+
+= render :partial => "products/table", :locals => {:products => @category.products}
 
 = link_to 'Edit', edit_category_path(@category)
 \|
