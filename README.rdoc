@@ -1,6 +1,6 @@
 ==TODO
 
-*Add pricerows to products
-*Allow products to be ordered within their category
-*Allow creation of products from within a category (autofill the category)
-*Allow edits from within index view
+* Add pricerows to products
+* Allow products to be ordered within their category
+* Allow creation of products from within a category (autofill the category)
+* Allow edits from within index view
