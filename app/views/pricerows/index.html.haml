@@ -1,0 +1,7 @@
+%h1 Listing pricerows
+
+=render :partial => "table", :locals => {:pricerows => @pricerows}
+
+%br
+
+= link_to 'New Pricerow', new_pricerow_path

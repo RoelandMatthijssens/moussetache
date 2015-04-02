@@ -1,0 +1,21 @@
+%table
+	%tr
+		%th Description
+		%th Currency
+		%th Value
+		%th Affix
+		%th
+		%th
+		%th
+
+	- pricerows.each do |pricerow|
+		%tr
+			%td= pricerow.description
+			%td= pricerow.currency
+			%td= pricerow.value
+			%td= pricerow.affix
+			%td= link_to 'Show', pricerow
+			%td= link_to 'Edit', edit_pricerow_path(pricerow)
+			%td= link_to 'Destroy', pricerow, :method => :delete, :data => { :confirm => 'Are you sure?' }
+	-if defined? product
+		=render :partial => "pricerows/formRow", :locals => {:product => product, :pricerow => @pricerow}

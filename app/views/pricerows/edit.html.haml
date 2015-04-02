@@ -1,0 +1,7 @@
+%h1 Editing pricerow
+
+= render :partial => 'form', :locals => {:pricerow => @pricerow, :product => @pricerow.product}
+
+= link_to 'Show', @pricerow
+\|
+= link_to 'Back', pricerows_path

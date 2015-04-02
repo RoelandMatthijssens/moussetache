@@ -1,0 +1,24 @@
+= form_for pricerow do |f|
+	- if pricerow.errors.any?
+		#error_explanation
+			%h2= "#{pluralize(pricerow.errors.count, "error")} prohibited this pricerow from being saved:"
+			%ul
+				- pricerow.errors.full_messages.each do |msg|
+					%li= msg
+
+	.field
+		= f.label :description
+		= f.text_field :description
+	.field
+		=f.text_field :currency
+		= f.text_field :value
+		= f.text_field :affix
+	-if defined? product
+		.field
+			= f.hidden_field :product_id, :value => product.id
+	-else
+		.field
+			= f.label :product_id
+			= f.number_field :product_id
+	.actions
+		= f.submit 'Save'

@@ -1,5 +1,7 @@
 Moussetache::Application.routes.draw do
 
+  resources :pricerows
+
   resources :products
 
   resources :categories

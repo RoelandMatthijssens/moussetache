@@ -3,6 +3,7 @@
 		%th Name
 		%th Category
 		%th Description
+		%th Prices
 		%th
 
 	- products.each do |product|
@@ -10,4 +11,8 @@
 			%td= link_to product.name, edit_product_path(product)
 			%td= link_to product.category.name, edit_category_path(product.category)
 			%td= product.description
+			%td
+				-product.pricerows.each do |price|
+					%span
+						=price.prettyprint
 			%td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }

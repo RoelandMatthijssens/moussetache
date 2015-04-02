@@ -11,6 +11,7 @@ class ProductsController < ApplicationController
 	# GET /products/1
 	# GET /products/1.json
 	def show
+		@pricerow = emptyPricerow
 	end
 
 	# GET /products/new
@@ -21,6 +22,7 @@ class ProductsController < ApplicationController
 
 	# GET /products/1/edit
 	def edit
+		@pricerow = emptyPricerow
 		@categories = Category.all
 	end
 
@@ -68,6 +70,13 @@ class ProductsController < ApplicationController
 		# Use callbacks to share common setup or constraints between actions.
 		def set_product
 			@product = Product.find(params[:id])
+		end
+
+		def emptyPricerow
+			pricerow = Pricerow.new
+			pricerow.currency = '€'
+			pricerow.value = 0.0
+			return pricerow
 		end
 
 		# Never trust parameters from the scary internet, only allow the white list through.

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Value:
+  = @pricerow.value
+%p
+  %b Affix:
+  = @pricerow.affix
+%p
+  %b Product:
+  = @pricerow.product_id
+
+= link_to 'Edit', edit_pricerow_path(@pricerow)
+\|
+= link_to 'Back', pricerows_path

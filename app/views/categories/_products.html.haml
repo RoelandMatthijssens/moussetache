@@ -4,4 +4,4 @@
 			%td.content
 				=product.name
 			%td.price
-				€13.42
+				=(product.pricerows.map &->(price){price.prettyprint}).join("/")
